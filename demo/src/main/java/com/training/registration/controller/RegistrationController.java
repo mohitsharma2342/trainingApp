@@ -40,8 +40,7 @@ public class RegistrationController {
 		return userDetailServiceImpl.getUsers();
 	}
 	
-	
-	@GetMapping
+	@GetMapping("/checkUserExist") 
 	public ResponseEntity<User> checkUserExist(@QueryParam("emailId") String emailId) {
 		User user = userDetailServiceImpl.checkUserExist(emailId);
 		if(user!=null) {
