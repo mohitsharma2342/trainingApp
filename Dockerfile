@@ -8,7 +8,7 @@ ARG JAR_FILE=target/registration-0.0.1-SNAPSHOT.jar
 WORKDIR /opt/docker
 
 # cp target/spring-boot-web.jar /opt/app/app.jar
-COPY ${JAR_FILE} registration-0.0.1-SNAPSHOT.jar
+COPY /var/lib/jenkins/workspace/Training App/demo/target/registration-0.0.1-SNAPSHOT.jar registration-0.0.1-SNAPSHOT.jar
 
 
 
