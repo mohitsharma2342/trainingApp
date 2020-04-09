@@ -2,7 +2,7 @@ FROM openjdk:8
 EXPOSE 8090
 
 
-ARG JAR_FILE=target/registration-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=/var/lib/jenkins/workspace/Training App/demo/target/registration-0.0.1-SNAPSHOT.jar
 
 # cd /opt/app
 WORKDIR /opt/docker
