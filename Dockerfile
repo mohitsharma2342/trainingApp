@@ -13,4 +13,4 @@ COPY ${JAR_FILE} training-app.jar
 
 
 
-ENTRYPOINT ["java","-jar","/training-app.jar"]
+ENTRYPOINT ["java","-jar","training-app.jar"]
