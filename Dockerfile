@@ -2,15 +2,11 @@ FROM openjdk:8
 EXPOSE 8090
 
 
-ARG JAR_FILE= target/training-app.jar
+
+ADD target/training-app.jar training-app.jar
 
 # cd /opt/app
-WORKDIR /opt/docker
-
-# cp target/spring-boot-web.jar /opt/app/app.jar
-COPY ${JAR_FILE} training-app.jar
-
-
+# WORKDIR /opt/docker
 
 
 ENTRYPOINT ["java","-jar","training-app.jar"]
