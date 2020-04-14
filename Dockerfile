@@ -14,5 +14,5 @@
 
 FROM openjdk:8
 EXPOSE 8090
-ADD target/training-app.jar training-app.jar
+ADD /demo/target/training-app.jar training-app.jar
 ENTRYPOINT ["java","-jar","/training-app.jar"]
