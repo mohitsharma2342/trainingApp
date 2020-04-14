@@ -3,7 +3,7 @@
 
 # COPY target/training-app.jar /opt/docker/
 
-3ADD target/training-app.jar training-app.jar
+#ADD target/training-app.jar training-app.jar
 
 # cd /opt/app
 # WORKDIR /opt/docker
