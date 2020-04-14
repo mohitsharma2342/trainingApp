@@ -71,7 +71,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			
 				 <configuration>
-        <finalName>training-app.jar</finalName>                   
+        <finalName>training-app</finalName>                   
     </configuration>
 				
 			</plugin>
