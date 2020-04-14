@@ -69,9 +69,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-          <warName>training-app.jar</warName>
-        </configuration>
+			
+				 <configuration>
+        <finalName>training-app.jar</finalName>                   
+    </configuration>
+				
 			</plugin>
 		</plugins>
 	</build>
