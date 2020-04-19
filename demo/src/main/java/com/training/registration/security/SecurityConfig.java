@@ -30,7 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	
 	  @Override
 	    protected void configure(HttpSecurity http) throws Exception {
-	        http.cors().and().authorizeRequests().antMatchers("/app/**").permitAll().anyRequest().
+	        http.cors().and().authorizeRequests().antMatchers("/kafka/**").permitAll().anyRequest().
 			authenticated().and().exceptionHandling().and().formLogin().loginProcessingUrl("/authenticate").
 			successHandler(successHandler).failureHandler(failureHandler)
 			// .logoutSuccessUrl("/login/login.html").invalidateHttpSession(true).deleteCookies("JSESSIONID")

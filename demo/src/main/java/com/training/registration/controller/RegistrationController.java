@@ -53,4 +53,10 @@ public class RegistrationController {
 	
 	}
 	
+	
+	public void name() {
+		
+	}
+	
+
 }
