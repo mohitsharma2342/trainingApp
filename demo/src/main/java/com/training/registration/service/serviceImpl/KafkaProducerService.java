@@ -10,9 +10,12 @@ public class KafkaProducerService {
 	
 	@Autowired
 	KafkaTemplate<String, String> kfkaTemplate;
+
+	
+	public static final String TOPIC = "KafkaProducer";
 	
 	public void pushMessage(String producerMessage) {
-		kfkaTemplate.send("KafkaProducer", producerMessage);
+		kfkaTemplate.send(TOPIC, producerMessage);
 	}
 	
 }
