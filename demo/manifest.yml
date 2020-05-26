@@ -3,7 +3,7 @@ applications:
 - name: TrainingApp
   memory: 512M
   instances: 1
-  path: target/training-app.jar
+  path: demo/target/training-app.jar
   buildpack: https://github.com/mohitsharma2342/trainingApp.git
   env:
     SPRING_PROFILES_ACTIVE : cloud
